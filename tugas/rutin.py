@@ -32,13 +32,8 @@ element.click()
 
 
 # Locate the div element
-cont = driver.find_element(By.CLASS_NAME, "role_box")
+cont = driver.find_element(By.XPATH, "//a[contains(@onclick,\"goAccessModul('../siakad/login', 'siakad', 'mhs', '55301')\")]")
 
-# Get the onclick attribute value
-onclick_value = cont.get_attribute("onclick")
-
-# Print or use the onclick value as needed
-print(onclick_value)
-sleep(9999999)
+cont.click()
 
 

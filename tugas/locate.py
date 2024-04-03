@@ -15,3 +15,7 @@ time.sleep(5)
 button = driver.find_element(By.CLASS_NAME, 'gNO89b')
 button.click()
 
+
+link= driver.find_element(By.LINK_TEXT, "https://www.python.org/")
+
+link.click()
