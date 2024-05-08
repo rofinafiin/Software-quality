@@ -30,7 +30,7 @@ driver.find_element(By.NAME, "customer.phoneNumber").send_keys('00089202')
 time.sleep(2)
 driver.find_element(By.NAME, "customer.ssn").send_keys('1')
 time.sleep(2)
-driver.find_element(By.NAME, "customer.username").send_keys('cihuy')
+driver.find_element(By.NAME, "customer.username").send_keys('steam')
 time.sleep(2)
 driver.find_element(By.NAME, "customer.password").send_keys('python')
 time.sleep(2)
@@ -39,5 +39,5 @@ time.sleep(2)
 
 
 driver.find_element(By.XPATH, '//input[@value="Register"]').click()
-
-
+time.sleep(10)
+driver.quit()
