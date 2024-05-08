@@ -8,6 +8,7 @@ options.add_experimental_option('detach', True)
 driver = webdriver.Chrome(options=options)
 
 driver.get("https://parabank.parasoft.com/")
+time.sleep(2)
 element = driver.find_element(By.XPATH, "//a[text()='Register']")
 element.click()
 
